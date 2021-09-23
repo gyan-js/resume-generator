@@ -5,7 +5,7 @@
 //alert("loading");
 
 
-##THE DOWN WAS ONLY FOR ROUGH
+## THE DOWN code WAS ONLY FOR ROUGH
 function addNewWEField() {
     //console.log("Add new field");
     let newNode = document.createElement("textarea");
