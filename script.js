@@ -94,7 +94,7 @@ function addNewWEField() {
          instaT.innerHTML = nameInsta + instaField;
      
          //LINKEDIN LINK
-         let nameLinked = "LinedIn: "
+         let nameLinked = "LinkedIn: "
      
          let linkedField = document.getElementById('linkedField').value;
          let linkedT = document.getElementById('linkedT');

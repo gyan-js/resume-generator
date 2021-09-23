@@ -72,8 +72,8 @@
      #workField,
      #aqField{
          background-color: #000;
+         color: #fff;
      }
-
      #imgField{
          background-color: #ffff00;
      }
@@ -106,5 +106,6 @@
      #objectiveField::placeholder,
      #workField::placeholder,
      #aqField::placeholder{
-         color: #FFFFFF;
+         color: #00eeff;
+         font-weight: 600;
      }
