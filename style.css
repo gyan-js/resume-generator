@@ -1,0 +1,110 @@
+#cv-form{
+    background: linear-gradient(100deg, orange, #FFFFFF, GREEN);
+   
+}
+
+/*@keyframes animate {
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }*/
+
+
+#cv-template{
+         display: none;
+     }
+     
+     .myimg{
+         border-radius: 10%;
+         width: 200px;
+        
+     }
+     
+     .background{
+         background-color: rgb(245, 230, 19);
+         align-items: center;
+         
+     }
+     
+     .waterMark{
+         position: absolute;
+         left: 90%;
+         top: 95%;
+     }
+     
+     .secondary-text{
+         color:#001;
+         font-weight: 700;
+         font-size: 20px;
+     }
+     
+     #fbT{
+         text-decoration: none;
+         font-size: 20px;
+         font-weight: 500;
+         color: #101010;
+     }
+     
+     #instaT{
+         text-decoration: none;
+         font-size: 20px;
+         font-weight: 500;
+         color: #101010;
+     }
+     
+     #linkedT{
+         text-decoration: none;
+         font-size: 20px;
+         font-weight: 500;
+         color: #101010;
+     }
+
+     #nameField,
+     #contactField,
+     #addressField,
+     #fbField,
+     #instaField,
+     #linkedField,
+     #spouceField,
+     #spouce1Field,
+     #aboutField,
+     #objectiveField,
+     #workField,
+     #aqField{
+         background-color: #000;
+     }
+
+     #imgField{
+         background-color: #ffff00;
+     }
+
+     #nameField:hover,
+     #contactField:hover,
+     #addressField:hover,
+     #fbField:hover,
+     #instaField:hover,
+     #linkedField:hover,
+     #spouceField:hover,
+     #spouce1Field:hover,
+     #aboutField:hover,
+     #objectiveField:hover,
+     #workField:hover,
+     #aqField:hover,
+     #imgField:hover{
+        transform: scale(1.1);
+     }
+
+     #nameField::placeholder,
+     #contactField::placeholder,
+     #addressField::placeholder,
+     #fbField::placeholder,
+     #instaField::placeholder,
+     #linkedField::placeholder,
+     #spouceField::placeholder,
+     #spouce1Field::placeholder,
+     #aboutField::placeholder,
+     #objectiveField::placeholder,
+     #workField::placeholder,
+     #aqField::placeholder{
+         color: #FFFFFF;
+     }
