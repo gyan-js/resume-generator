@@ -21,9 +21,14 @@
      }
      
      .background{
-         background-color: rgb(245, 230, 19);
+         background-color: #ff0000;
          align-items: center;
          
+     }
+
+     .background1{
+        background-color: #ffff00;
+        align-items: center;
      }
      
      .waterMark{
@@ -109,3 +114,23 @@
          color: #00eeff;
          font-weight: 600;
      }
+
+     .buttonAdd1:hover,
+    .buttonAdd2:hover{
+        transform: scale(1.08);
+     }
+
+     .backButton{
+         position: absolute;
+         left: 60.8%;
+         top:  90%;
+         width: 100px;
+         height: 38px;
+     }
+
+     .backButton:hover{
+         opacity: 0.5;
+     }
+
+
+   

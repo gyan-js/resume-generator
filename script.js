@@ -8,6 +8,7 @@ function addNewWEField() {
          newNode.classList.add("form-control");
          newNode.classList.add("weField");
          newNode.setAttribute("rows", 4);
+         
          newNode.setAttribute('placeholder', 'Enter Here')
      
          let weOb = document.getElementById('we')
@@ -164,6 +165,14 @@ function addNewWEField() {
      function printCV() {
          window.print();
 
-         let print = document.getElementById('print');
+       //  let print = document.getElementById('print');
          print.style.display = 'none';
+         
      }
+
+     function backHomePage() {
+         let current = document.getElementById('cv-template');
+         current.style.display = 'none'
+        let home = document.getElementById('cv-form');
+        home.style.display = 'block'
+    }
