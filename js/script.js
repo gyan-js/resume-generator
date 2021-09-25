@@ -138,7 +138,7 @@ function addNewWEField() {
      
              document.getElementById('eqT').innerHTML = atr;
      
-         }
+         } 
      
          document.getElementById('cv-form').style.display = 'none';
          let hex = document.getElementById('cv-template');
@@ -166,7 +166,7 @@ function addNewWEField() {
          window.print();
 
        //  let print = document.getElementById('print');
-         print.style.display = 'none';
+         //print.style.display = 'none';
          
      }
 
