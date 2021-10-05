@@ -65,33 +65,33 @@ function register () {
   })
 }
 
-// Set up our login function
+//                                                                                       Set up our login function
 function login () {
-  // Get all our input fields
+
   email = document.getElementById('email').value
   password = document.getElementById('password').value
 
-  // Validate input fields
+  //                                                                                                 Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
     alert('Email or Password is Outta Line!!')
     return
-    // Don't continue running the code
+ 
   }
 
   auth.signInWithEmailAndPassword(email, password)
   .then(function() {
-    // Declare user variable
+    //                                                                                              Declare user variable
     var user = auth.currentUser
 
-    // Add this user to Firebase Database
+    //                                                                                       Add this user to Firebase Database
     var database_ref = database.ref()
 
-    // Create User data
+           //                                                                                                        Create User data
     var user_data = {
       last_login : Date.now()
     }
 
-    // Push to Firebase Database
+   
     database_ref.child('users/' + user.uid).update(user_data)
 
     // DOne

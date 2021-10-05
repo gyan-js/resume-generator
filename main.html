@@ -2,88 +2,135 @@
 <html lang="en">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
-    
 </head>
 
 <body>
+    
 
     <div class="container" id="cv-form">
-
-        
        
+       
+
+
         <p class="text-center"></p>
         <div class="row">
             <div class="col-md-6">
-                <h3 class="secondary-text">Personal Information</h3>
-
-                <div class="form-group">
-                    <label for="nameField">Your Name</label>
-                    <input placeholder="Enter Here" type="text" id="nameField" class="form-control">
-                </div>
-
-                <div class="form-group">
-                    <label for="conatactField">Your Contact</label>
-                    <input placeholder="Enter Here" type="text" id="contactField" class="form-control">
-                </div>
-
-                <div class="form-group">
-                    <label for="addressField">Your Address</label>
-
-                    <textarea placeholder="Enter Here" type="text" id="addressField" class="form-control"
-                        rows="5"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="spouceField">Maritial Status</label>
-
-                    <input placeholder="Enter Here" type="text" id="spouceField" class="form-control"
-                        rows="5"></input>
-                </div>
-
-                <div class="form-group">
-                    <label for="spouce1Field">Spouce Name</label>
-
-                    <input placeholder="Enter Here" type="text" id="spouce1Field" class="form-control"
-                        rows="5"></input>
-                </div>
-
-                <div class="form-group mt-3">
-                    <label for="">Select your Photo</label>
-                    <input  id="imgField" type="file" class="form-control">
-                </div>
-
-                <p class="secondary-text">Social Sites</p>
-
-                <div class="form-group">
-                    <label for="fbField">Facebook</label>
-                    <input placeholder="Enter Here" type="text" id="fbField" class="form-control">
-                </div>
-
-                <div class="form-group">
-                    <label for="instaField">Instagram</label>
-                    <input placeholder="Enter Here" type="text" id="instaField" class="form-control">
-                </div>
-
-                <div class="form-group">
-                    <label for="linkedField">LinkedIn</label>
-                    <input placeholder="Enter Here" type="text" id="linkedField" class="form-control">
-                </div>
-
-
-               
-
-          
                 
+                    <h2>Personal Information</h2>
+
+                    
+
+                    <div class="form-group">
+                        <label for="nameField">Your Name</label>
+                        <input  placeholder="Enter Here" type="text" id="nameField" class="form-control">
+                    </div>
+                
+                   
+                       
+                        <div class="form-group mt-3">
+                            <label for="">Select your Photo</label>
+                            <input  id="imgField" type="file" class="form-control">
+                        </div>
+                      
+                    
+
+                    <h3 style="color: #000">Contact</h3>
+
+                    
+                        <div class="form-group">
+                            <label for="">Phone Number</label>
+                            <input  placeholder="Enter Here" type="text" id="contactField" class="form-control">
+                        </div>
+                    
+                 
+                        
+                            <div class="form-group">
+                                <label for="">Email Address</label>
+                                <input   placeholder="Enter Here" type="text" id="mailField" class="form-control">
+                            </div>
+                        
+                   
+
+                    <div class="form-group">
+                        <label for="">Facebook</label>
+                        <input  placeholder="Enter Here" type="text" id="fbField" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Instagram</label>
+                        <input  placeholder="Enter Here" type="text" id="instaField" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="8">LinkedIn</label>
+                        <input  placeholder="Enter Here" type="text" id="linkedField" class="form-control">
+                    </div>
+
+                    <h3 style="color: #000">Address</h3>
+
+                    <div class="form-group">
+
+
+                        <textarea  placeholder="Enter Here" type="text" id="addressField" class="form-control"
+                            rows="5"></textarea>
+                    </div>
+
+                    <h3 style="color: #000">Skills</h3>
+
+
+                    <div class="form-group mt2" id="s">
+                        <!-- <label for="">Work Experience</label>-->
+
+                        <textarea  id="skillField" rows="2" placeholder="Enter Here"
+                            class="form-control skillField"></textarea>
+
+                        <div class="container text-center mt-2" id="skillAddButton">
+                            <button type="button" onclick="addNewSField()" class="btn btn-primary btn-sm buttonAdd1">Add</button>
+                        </div>
+                    </div>
+
+                    <h3 style="color: #000">Languages</h3>
+
+
+                    <div class="form-group mt2" id="l">
+                        <!-- <label for="">Work Experience</label>-->
+
+                        <textarea  id="langField" rows="2" placeholder="Enter Here"
+                            class="form-control langField"></textarea>
+
+                        <div class="container text-center mt-2" id="langAddButton">
+                            <button type="button" onclick="addNewLField()" class="btn btn-primary btn-sm buttonAdd3">Add</button>
+                        </div>
+                    </div>
+
+                    <h3 style="color: #000">Intrests</h3>
+
+                    <div class="form-group mt2" id="i">
+                        <!-- <label for="">Work Experience</label>-->
+
+                        <textarea  id="intrestField" rows="2" placeholder="Enter Here"
+                            class="form-control intrestField"></textarea>
+
+                        <div class="container text-center mt-2" id="intrestAddButton">
+                            <button type="button" onclick="addNewIField()" class="btn btn-primary btn-sm buttonAdd2">Add</button>
+                        </div>
+                    </div>
+
             </div>
+          
             <div class="col-md-6">
                 <h3 class="secondary-text">Professional Information</h3>
 
@@ -91,166 +138,362 @@
                 <div class="form-group mt-2">
                     <label for="">About Me</label>
 
-                    <textarea id="aboutField" placeholder="Enter Here" class="form-control" rows="4"></textarea>
+                    <textarea  id="aboutField" placeholder="Enter Here" class="form-control" rows="4"></textarea>
                 </div>
 
                 <div class="form-group mt-2">
                     <label for="">Objective</label>
 
-                    <textarea id="objectiveField" placeholder="Enter Here" class="form-control" rows="4"></textarea>
+                    <textarea  id="objectiveField" placeholder="Enter Here" class="form-control" rows="4"></textarea>
                 </div>
 
+                <h3 style="color: #000">Work Experience</h3>
+
                 <div class="form-group mt2" id="we">
-                    <label for="">Work Experience</label>
+                   
+
+                    <label for="">Company</label>
 
                     <textarea  id="workField" rows="2" placeholder="Enter Here" class="form-control weField"></textarea>
 
                     <div class="container text-center mt-2" id="weAddButton">
-                        <button onclick="addNewWEField()" class="btn btn-primary btn-sm buttonAdd1">Add</button>
+                        <button type="button" onclick="addNewWEField()" class="btn btn-primary btn-sm buttonAdd1">Add</button>
+                    </div>
+                </div>
+                
+                <div class="form-group mt2" id="post">
+                   
+
+                    <label for="">Designation</label>
+
+                    <textarea  id="postField" rows="2" placeholder="Enter Here" class="form-control postField"></textarea>
+
+                    <div class="container text-center mt-2" id="postAddButton">
+                        <button type="button" onclick="addNewPField()" class="btn btn-primary btn-sm buttonAdd8">Add</button>
                     </div>
                 </div>
 
+                <div class="form-group mt2" id="timePeriod1">
+                   
+
+                    <label for="">Time Period</label>
+
+                    <textarea  id="tp1Field" rows="2" placeholder="Enter Here" class="form-control tp1Field"></textarea>
+
+                    <div class="container text-center mt-2" id="tp1AddButton">
+                        <button type="button" onclick="addNewTP1Field()" class="btn btn-primary btn-sm buttonAdd9">Add</button>
+                    </div>
+                </div>
+
+                <h3 style="color: #000">Academic Qualifications</A></h3>
 
                 <div class="form-group mt2" id="eq">
-                    <label for="">Academic Qualifications</label>
+
+                    <label for="">School/Insitute/University</label>
 
                     <textarea  id="aqField" placeholder="Enter Here" class="form-control eqField"></textarea>
 
                     <div class="container text-center mt-2" id="eqAddButton">
-                        <button onclick="addNewEQField()" class="btn btn-primary btn-sm buttonAdd2">Add</button>
+                        <button type="button" onclick="addNewEQField()" class="btn btn-primary btn-sm buttonAdd2">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt2" id="course">
+
+                    <label for="">Course(optional)</label>
+
+                    <textarea  id="crField" placeholder="Enter Here" class="form-control crField"></textarea>
+
+                    <div class="container text-center mt-2" id="crAddButton">
+                        <button type="button" onclick="addNewCRField()" class="btn btn-primary btn-sm buttonAdd10">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt2" id="timePeriod2">
+
+                    <label for="">Time Period</label>
+
+                    <textarea  id="tp2Field" placeholder="Enter Here" class="form-control tp2Field"></textarea>
+
+                    <div class="container text-center mt-2" id="tp2AddButton">
+                        <button type="button" onclick="addNewTP2Field()" class="btn btn-primary btn-sm buttonAdd2">Add</button>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="container text-center">
-            <button onclick="generateCV()" class="btn btn-primary bt-lg">Generate CV</button>
+            <button id="sub" type="submit" onclick="generateCV()" class="btn btn-primary bt-lg">Generate CV</button>
+          
         </div>
+
+     <!---  <div class="alert hide" id="show">
+            <span class="fas fa-exclamation-circle"></span>
+            <span class="msg">Alarm Set</span>
+            <span class="close-btn">
+                <span class="fas fa-times"></span>
+            </span>
+        </div-->
+    
+    
     </div>
 
 
+
+
+
     <!---CV TEMPLATE-->
-    <div class="container" id="cv-template">
-        <div class="row">
-            <div class="col-md-4 background">
-                <img 
-                src="images/pp.jpg" 
-                alt="" 
-                class="img-fluid myimg"
-                id="imgTempelate"
-                >
+    <div class="containerT" id="cv-template">
+        <main class="main-content">
+            <section class="left-section">
+                <div class="left-content">
+                    <div class="profile">
+                        <img id="imgT" src="assets/avatar.png" alt="">
+                        <h2 id="nameT" class="name">Lorem Dola Ipsum</h2>
 
-                <div class="container">
-                    <div class="innerContainer">
-                        <p id="nameT1">Gyan Shresth</p>
-                        <p id="contactT1">+918345678290, +916209023452</p>
-                        <p id="addressT1">67589/45673 Sector 8 Asphalt 8</p>
-                        <p id="spouceT1">67589/45673 Sector 8 Asphalt 8</p>
-                        <p id="spouceT11">67589/45673 Sector 8 Asphalt 8</p>
-                        <hr />
-                          </hr>
                     </div>
-                    
-                    <p><a id="fbT" href="#1">https://www.facebook.com</a></p>
-                    <p><a id="instaT" href="#1">https://www.instagram.com</a></p>
-                    <p><a id="linkedT" href="#1">https://www.linkedin.com</a></p>
-                </div>
-            </div>
-            <div class="col-md-8 py-5">
-                <h1 id="nameT2" class="text-center" style="font-weight: 900;">Gyan Shresth</h1>
+                    <div class="contact-info">
+                        <h3 class="main-title">Contact Info</h3>
+                        <hr>
 
-                <div class="card mt-4">
-                    <div class="card-header background">
-                        <h3>About Me</h3>
-                    </div>
-                    <div class="card body">
-                        <ul id="abtT">
+                        <ul>
                             <li>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, nobis.
+                                <i class="fa fa-phone"></i>
+                                <p style="color: #000;" id="contactT">07661892982</p>
                             </li>
                             <li>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, nobis.
+                                <i class="fa fa-google"></i>
+                                <p style="color: #000;" id="gmailT">lorem@gmail.com</p>
+                            </li>
+
+                            <li>
+                                <i class="fa fa-facebook"></i>
+                                <p style="color: #000;" id="fbT">www.facebook.com/lorem</p>
                             </li>
                             <li>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, nobis.
+                                <i class="fa fa-instagram"></i>
+                                <p id="instaT" style="color: #000;">@loremipsum</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-linkedin-square"></i>
+                                <p style="color: #000;" id="linkedT">loremLinked</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <p style="color: #000;" id="locationT"> Pramount St, London </p>
                             </li>
                         </ul>
                     </div>
-                </div>
-
-                <div class="card mt-4">
-                    <div class="card-header background">
-                        <h3>Objective</h3>
-                    </div>
-                    <div class="card body">
-                        <p id="objectiveT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, velit!
-                            Laborum nihil sunt
-                            deserunt a. Magni sint quis, totam distinctio nostrum voluptates placeat facere repudiandae,
-                            consectetur eligendi ea nam omnis.</p>
-                    </div>
-                </div>
-
-               
-
-                <div class="card mt-4">
-                    <div class="card-header background">
-                        <h3>Work Experience</h3>
-                    </div>
-                    <div class="card body">
-                        <ul id="weT">
+                    <div   class="skills-section">
+                        <h3 class="main-title">Skills</h3>
+                        <ul id="skillT">
                             <li>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, nobis.
+                                JAVASCRIPT
                             </li>
                             <li>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, nobis.
+                                JAVASCRIPT
                             </li>
                             <li>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, nobis.
+                                JAVASCRIPT
+                            </li>
+                            <li>
+                                JAVASCRIPT
                             </li>
                         </ul>
                     </div>
-                </div>
-
-                <div class="card mt-4">
-                    <div class="card-header background">
-                        <h3>Academic Qualifications</h3>
-                    </div>
-                    <div class="card body">
-                        <ul id="eqT">
+                    <div style="margin-top: 10px;" class="languages-section">
+                        <h3 class="main-title">Languages</h3>
+                        <ul id="langT">
                             <li>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, nobis.
+                                ENGLISH
                             </li>
                             <li>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, nobis.
+                                ENGLISH
                             </li>
                             <li>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, nobis.
+                                ENGLISH
+                            </li>
+                            <li>
+                                ENGLISH
                             </li>
                         </ul>
+
+
                     </div>
+
+                    <div style="margin-top: 10px;" class="intrest-section">
+                        <h3 class="main-title">Intrests</h3>
+
+                        <ul id="intrestT">
+                            <li>
+                                PLAYING
+                            </li>
+                            <li>
+                                PLAYING
+                            </li>
+                            <li>
+                                PLAYING
+                            </li>
+                            <li>
+                                PLAYNIG
+                            </li>
+                        </ul>
+
+                    </div>
+            </section>
+            <section class="right-section">
+                <div class="right-main-content">
+                    <section class="about sect">
+                        <h2 class="right-title">About Me</h2>
+                        <p id="abtT" class="para">
+                         .
+                        </p>
+                    </section>
+
+                    <section class="experince sect">
+                        <h2 class="right-title">Experience</h2>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 id="companyT" class="tl-title">Microsoft </h5>
+                            </div>
+
+                            <div class="tp1">
+                                <h5 id="timePeriod1T" class="para">2017 - 2019</h5>
+                            </div>
+                            
+                                <div id="post1" class="tl-content">
+                                    <h5 id="designationT" class="tl-title-2">Junior Developer</h5>
+                                   
+                                </div>
+                            
+                        </div>
+                      <!--  <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title">Google Inc</h5>
+                                <p class="para">2019 - 2020</p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2">Lead Web developer</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title">Google Inc</h5>
+                                <p class="para">2019 - 2020</p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2">Lead Web developer</h5>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title">Apple</h5>
+                                <p class="para">2020 - Present</p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2">Senior Developer</h5>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    -->
+                    </section>
+                    <section class="education sect">
+                        <h2 class="right-title">education</h2>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title">Cheney School</h5>
+                                <p class="para">2015 - 2016</p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2">Gcse's</h5>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title">Cheney School</h5>
+                                <p class="para">2016 - 2018</p><br>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2">A - Levels</h5>
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title">University of Sussex</h5>
+                                <p class="para">2018 - Present</p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2">Computer Science</h5>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="awards sect">
+                        <h2 class="right-title">Awards</h2>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title">Microsoft</h5>
+                                <p class="para">June 2016</p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2">Excellent Work</h5>
+                                    <p class="para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate
+                                        vitae
+                                        voluptatem deleniti,
+                                        laboriosam odio nobis quae fugit facilis quo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title">Alphabet Inc</h5>
+                                <p class="para">June 2016</p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2">The Star Employee</h5>
+                                    <p class="para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate
+                                        vitae
+                                        voluptatem deleniti,
+                                        laboriosam odio nobis quae fugit facilis quo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+            </section>
+            <button onclick="h()">PRINT</button>
+        </main>
 
-                <div class="container mt-3 text-center">
-                    <button 
-                    id="print"
-                    onclick="printCV()" 
-                    class="btn background1"
-                    >PRINT CV
-                </button>
-                </div>
-
-            </div>
-        </div>
-
-               
-                    <button  onclick="backHomePage()" class="btn btn-primary btn-sm backButton">BACK</button>    
-        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
     <script src="js/script.js"></script>
+    
+    <h5 style="visibility: hidden;"></h5>
 </body>
 
 </html>
