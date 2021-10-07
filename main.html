@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <script src="js/libs/jspdf.min.js"></script>
+    <script src="js/libs/html2pdf.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -243,7 +245,8 @@
 
 
     <!---CV TEMPLATE-->
-    <div class="containerT" id="cv-template">
+    
+    <div class="template1" id="cv-template">
         <main class="main-content">
             <section class="left-section">
                 <div class="left-content">
@@ -254,7 +257,7 @@
                     </div>
                     <div class="contact-info">
                         <h3 class="main-title">Contact Info</h3>
-                        <hr>
+                        <hr class="one" >
 
                         <ul>
                             <li>
@@ -483,7 +486,7 @@
                     </section>
                 </div>
             </section>
-            <button onclick="h()">PRINT</button>
+            <button id="downloadBtn" class="btn btn-primary  download" >Generate PDF</button>
         </main>
 
     </div>

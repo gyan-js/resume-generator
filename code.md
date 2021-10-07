@@ -94,3 +94,22 @@ const firebaseConfig = {
            return true;
          }
        }
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+       window.onload = function () {
+    document.getElementById("downloadBtn")
+        .addEventListener("click", () => {
+            const template1 = this.document.getElementById("cv-template");
+            console.log(template1);
+            console.log(window);
+            var opt = {
+                margin: 1,
+                filename: 'myfile.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            html2pdf().from(template1).set(opt).save();
+        })
+}

@@ -1,5 +1,6 @@
-body{
+hmtl,body{
     background-color: #94D9EA;
+    
 }
 
 *{
@@ -14,6 +15,7 @@ body{
 
 #cv-template{
          display: none;
+         position: relative;
      }
      
      .myimg{
@@ -107,8 +109,10 @@ input{
         grid-column: span 2;
         height: 100%;
         background-color: #808080;
+        border: #000 3px solid;
     }
     .right-section{
+        border: #000 3px solid ;
         grid-column: span 5;
         background-color: #f7f7f7;
         height: 100%;
@@ -258,12 +262,15 @@ input{
         color: #2F80ED;
         margin-bottom: 1.2rem;
         position: relative;
+        
     }
+
+ 
     
     .right-title::after{
         content: "";
         position: absolute;
-        width: 60%;
+        width: 65%;
         height: .2rem;
         background-color: #ccc;
         border-radius: 12px;
@@ -323,9 +330,38 @@ input{
    .tp1{
     
         position: absolute;
-        left: 50%;
-        top: 32.2%;
+       left: 50%;
     }
+
+hr.one{
+    background-color: #000;
+}
+
+
+hr.comp{
+    width: 60%;
+}
+
+hr.comp::before{
+    content: "";
+    position: relative;
+    width: .7rem;
+    height: .7rem;
+    background-color: #2D9CDB;
+    opacity: 2;
+    border-radius: 50%;
+    top: 33.6%;
+}
+
+button.download{
+    position: absolute;
+    left: 90.5%;
+}
+
+button.download:hover{
+    background:#ffa500;
+    color: #000;
+}
 
     /*#post1{
      

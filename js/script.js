@@ -1,3 +1,8 @@
+//const { html2pdf } = require("./libs/html2pdf.bundle.min");
+
+//const { html2pdf } = require("./libs/html2pdf.bundle.min");
+
+
 //alert("loading");
 function addNewCRField() {
     let newNode = document.createElement('textarea');
@@ -239,7 +244,7 @@ function generateCV() {
     //////////////////////////////////////////////////////////// This one is for Profile Pic  field
 
     let file = document.getElementById('imgField').files[0];
-    console.log(file);
+    //console.log(file);
 
     let reader = new FileReader()
 
@@ -331,7 +336,7 @@ document.getElementById('abtT').innerHTML =  document.getElementById('aboutField
     let companyString = '';
 
     for (let e of company) { // here we have used the loop because ther will be multiple intrests field
-            companyString = companyString + `<h5>  ${e.value}  </h5"><hr style="width: 200px;">`;
+            companyString = companyString + `<h5>  ${e.value}  </h5"><hr class="comp">`;
 
 
         document.getElementById('companyT').innerHTML = companyString;
@@ -363,12 +368,47 @@ document.getElementById('abtT').innerHTML =  document.getElementById('aboutField
         document.getElementById('designationT').innerHTML = postString;
     }
 
-
-
 }
 
 
 
-function h() {
-    window.print()
+
+/* FUNCTION  FOR DOWNLOADING CV*/
+
+
+
+window.onload = function () {
+    
+    document.getElementById("downloadBtn")
+
+        .addEventListener("click", () => {
+
+            const template1 = this.document.getElementById("cv-template");
+
+            console.log(template1);
+
+            console.log(window);
+
+            var opt = {
+                margin: 1,
+                filename: 'CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 9 },
+                jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+            };
+
+            html2pdf().from(template1).set(opt).save();
+
+        })
+       // window.print();
 }
+
+
+
+/*function generatePDF() {
+    var doc = new jsPDF();
+    doc.addPage();
+    doc.save('hello.pdf');
+}
+
+*/
