@@ -371,13 +371,11 @@ document.getElementById('abtT').innerHTML =  document.getElementById('aboutField
 }
 
 
-
-
 /* FUNCTION  FOR DOWNLOADING CV*/
 
 
 
-window.onload = function () {
+/*window.onload = function () {
     
     document.getElementById("downloadBtn")
 
@@ -393,7 +391,7 @@ window.onload = function () {
                 margin: 1,
                 filename: 'CV.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 9 },
+                html2canvas: { scale:70 },
                 jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
             };
 
@@ -401,14 +399,12 @@ window.onload = function () {
 
         })
        // window.print();
+}*/
+
+
+
+function printCVAsPDF() {
+   window.print();
 }
 
-
-
-/*function generatePDF() {
-    var doc = new jsPDF();
-    doc.addPage();
-    doc.save('hello.pdf');
-}
-
-*/
+ 

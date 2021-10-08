@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Login</title>
          <!-- Cool Google Fonts -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
@@ -13,29 +14,45 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
     <body>
-        <div id="content_container">
-            <div id="form_container">
-                <div id="form_header_container">
-                    <h2 id="form_header">Login </h2>
-                </div>
-
-                <div id="form_content_container">
-                    <div id="form_content_inner_container">
-                        <input type="text" id="user" placeholder="Full name">
-                        <input type="email" id="email" placeholder="Email">
-                        <input type="password" id="password" placeholder="New Password">
-
-                 
-
-                        <div id="button_container">
-                            <button id="login1" onclick="login()">Login</button>
-                            <button id="login2" onclick="register()">Register</button>
-                        </div>
-
-                    </div>
-                </div>
+        <div class="main-containewr">
+            <div class="shapesForBakground">
+                <div class="rhombus1"></div>
+                <div class="rhombus2"></div>
+                <div class="rhombus3"></div>
+                <div class="rhombus4"></div>
+                <div class="rhombus5"></div>
             </div>
+
+        
+            
         </div>
+<!--<center>-->
+    
+        <div class="left-content">
+            <i id="symbol" class="fa fa-windows"></i>
+            <h1>Stages</h1>
+            <center>
+                <div class="container">
+                    <h2 id="signUp">Sign Up</h2>
+                    <input placeholder="Full Name*" type="text" id="user">
+                    <input type="email" placeholder="Email*" type="text" id="email">
+                    <input type="password" placeholder="Choose Password*" type="text" id="password">
+                </div>
+            </center>
+            
+            <p id="notice" >Password must be atleast 6 characters long .</p>
+
+            <button id="registerButtonID" class="registerButton" onclick="register()">Sign Up</button>
+            <button id="loginButtonID"class="loginButton" onclick="login()">Sign In</button>
+            <H5 id="query1">Already a member? <button id="showSignInID" class="showSignIn" onclick="showSignIn()" >Sign In</button></H5>
+        </div>
+        <div class="right-content">
+
+        </div>
+    
+   
+<!--</center>-->
+      
     </body>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>

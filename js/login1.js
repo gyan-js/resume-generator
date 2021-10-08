@@ -1,3 +1,29 @@
+function showSignIn() {
+  //window.open('https://github.com/');
+
+document.getElementById('signUp').innerHTML = 'Sign In';
+////////////////////////////////////////////////////////////
+let user = document.getElementById('user');
+let email = document.getElementById('email');
+let password = document.getElementById('password');
+let notice = document.getElementById('notice');
+let loginButton = document.getElementById('loginButtonID');
+let registerButton = document.getElementById('registerButtonID');
+let showSignIn = document.getElementById('showSignInID');
+let query1 = document.getElementById('query1');
+
+////////////////////////////////////////////////////////////
+user.style.display = 'none';
+email.style.top = '40%';
+password.style.top = '50%'
+notice.style.display = 'none';
+registerButton.style.display = 'none';
+loginButton.style.display = 'block';
+showSignIn.style.display = 'none'
+query1.style.display = 'none';
+}
+
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDv86tSYR1NsFzdjhrYsBzh1SGOK8BhVF0",
@@ -29,7 +55,7 @@ function register () {
     // Don't continue running the code
   }
   if (validate_field(full_name) == false) {
-    alert('One or More Extra Fields is Outta Line!!')
+    alert('The name field is empty or not applicable!')
     return
   }
  
@@ -73,7 +99,7 @@ function login () {
 
   //                                                                                                 Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
-    alert('Email or Password is Outta Line!!')
+    alert('Either of the field is empty or not applicable!')
     return
  
   }
@@ -142,3 +168,6 @@ function validate_field(field) {
     return true
   }
 }
+
+
+

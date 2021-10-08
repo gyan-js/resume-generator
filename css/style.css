@@ -4,8 +4,7 @@ hmtl,body{
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    list-style-type: disc;
    box-sizing: border-box;
@@ -15,7 +14,7 @@ hmtl,body{
 
 #cv-template{
          display: none;
-         position: relative;
+         
      }
      
      .myimg{
@@ -408,5 +407,23 @@ button.download:hover{
 @media screen and (max-width:390px){
     .name{
         font-size: 1.5rem;
+    }
+}
+
+@media print{
+    #cv-template{
+       height: 100vw;
+       width: 100vh;
+        transform: scale(1);
+        position: relative;
+    }
+
+    body{
+        background: #FFF;
+        position: absolute;
+    }
+
+    #downloadBtn{
+        display: none;
     }
 }
