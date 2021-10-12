@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="overflow: hidden;">
     <head>
         <meta charset="utf-8">
         <title>Login</title>
@@ -14,21 +14,67 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
     <body>
-        <div class="main-containewr">
+        <div class="main-container">
             <div class="shapesForBakground">
-                <div class="rhombus1"></div>
-                <div class="rhombus2"></div>
-                <div class="rhombus3"></div>
-                <div class="rhombus4"></div>
-                <div class="rhombus5"></div>
+                <div class="parallelogram1"></div>
+                <div class="parallelogram2"></div>
+                <div class="parallelogram3"></div>
+                <div class="parallelogram4"></div>
+                <div class="parallelogram5"></div>
             </div>
 
         
             
         </div>
 <!--<center>-->
-    
-        <div class="left-content">
+
+        <main class="main-content">
+            <section class="left-seciton">
+                <div class="login">
+                    <div class="heading">
+                        <i style="font-size: 25px;" class="fa fa-github fa-spin"></i><H1 class="comp">Stages</H1>
+                    </div>
+                    <div class="signUpContainer">
+                        <h1 id="signUpID" class="signUp">Sign Up</h1>
+                         <input type="text" name="" id="user" placeholder="Enter your name*">
+                        <input type="email" name="" id="email" placeholder="Enter your email address*">
+                       <input type="password" name="" id="password" placeholder="Choose Password*">
+                        <h3 id="noticeID" class="notice">Password must be atleast 6 charcters long.</h3>
+                        <button id="signUpButtonID" class="signUpButton" onclick="register()">Sign Up</button>
+                        <button id="loginButtonID" class="loginButton" onclick="login()">Login</button>
+                    </div>        
+                    <p id="queryID" class="query">Already a member? </p>   <button onclick="showSignIn()" id="showSignInID" class="showSignIn">Sign In</button>                                  
+                </div>
+            </section>
+           
+          <!--  <div class="parallelogram6"></div>-->
+            <section class="right-section">
+                     <div class="parallelogram6"></div>
+                     <div class="parallelogram7"></div>
+                     <div class="parallelogram8"></div>
+                     <div class="parallelogram9">
+                         <img style="width: 100%;" src="assets/cameraman.jpg" alt="">
+                         
+                     </div>
+                     <div class="parallelogram10"></div>
+
+                   <!----  <section class="parallelogram9">
+                        <img style="width: 100%;" src="assets/laptop.jpg" alt="">
+                        
+                    </section>-->
+                     
+                     
+                     <div class="description">
+                         
+                            <h1 class="description1" >Explore your <br> creativity</h1>
+                        <p class="description2">Discover new skils, meet pasionate teachers <br> and become a part of the most helpful community <br> of creatives in the world.</p>
+                         
+                     </div>
+            </section>
+        </main>
+
+
+       <!---- <div class="left-content">
             <i id="symbol" class="fa fa-windows"></i>
             <h1>Stages</h1>
             <center>
@@ -45,10 +91,10 @@
             <button id="registerButtonID" class="registerButton" onclick="register()">Sign Up</button>
             <button id="loginButtonID"class="loginButton" onclick="login()">Sign In</button>
             <H5 id="query1">Already a member? <button id="showSignInID" class="showSignIn" onclick="showSignIn()" >Sign In</button></H5>
-        </div>
+        </div>--
         <div class="right-content">
 
-        </div>
+        </div>-->
     
    
 <!--</center>-->

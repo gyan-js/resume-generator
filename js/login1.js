@@ -1,26 +1,28 @@
 function showSignIn() {
   //window.open('https://github.com/');
 
-document.getElementById('signUp').innerHTML = 'Sign In';
+document.getElementById('signUpID').innerHTML = 'Sign In';
 ////////////////////////////////////////////////////////////
 let user = document.getElementById('user');
 let email = document.getElementById('email');
 let password = document.getElementById('password');
-let notice = document.getElementById('notice');
+let notice = document.getElementById('noticeID');
 let loginButton = document.getElementById('loginButtonID');
-let registerButton = document.getElementById('registerButtonID');
+let registerButton = document.getElementById('signUpButtonID');
 let showSignIn = document.getElementById('showSignInID');
-let query1 = document.getElementById('query1');
+let query = document.getElementById('queryID');
 
 ////////////////////////////////////////////////////////////
 user.style.display = 'none';
 email.style.top = '40%';
 password.style.top = '50%'
+password.setAttribute('placeholder', 'Enter your password*');
 notice.style.display = 'none';
 registerButton.style.display = 'none';
 loginButton.style.display = 'block';
+loginButton.style.cursor = 'pointer';
 showSignIn.style.display = 'none'
-query1.style.display = 'none';
+query.style.display = 'none';
 }
 
 

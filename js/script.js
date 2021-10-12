@@ -260,31 +260,40 @@ function generateCV() {
     //////////////////////////////////////////////// This one is for phone number field 
     let contactField = document.getElementById('contactField').value;
     let contactT = document.getElementById('contactT');
+    contactT.style.color = '#FFF'
 
     contactT.innerHTML = contactField;
     /////////////////////////////////////////////////// This one is for email field
     let mailField = document.getElementById('mailField').value;
     let mailT = document.getElementById('gmailT');
+    mailT.style.color= '#FFF'
 
     mailT.innerHTML = mailField;
     //////////////////////////////////////////////////// This one is for Facebook Username Field
     let fbField = document.getElementById('fbField').value;
     let fbT = document.getElementById('fbT');
+    fbT.style.color = '#FFF'
 
     fbT.innerHTML = fbField;
     //////////////////////////////////////////////////////  This is for instagram Username Field
     let instatField = document.getElementById('instaField').value;
     let instaT = document.getElementById('instaT');
 
+    instaT.style.color = '#FFF'
+
     instaT.innerHTML = instatField;
     ////////////////////////////////////////////////// This is for LinkedIn username Field
     let linkedField = document.getElementById('linkedField').value;
     let linkedT = document.getElementById('linkedT');
 
+    linkedT.style.color = '#FFF'
+
     linkedT.innerHTML = linkedField;
 ///////////////////////////////////////////////////////// This is for the Address Field
     let addressField = document.getElementById('addressField').value;
     let locationT = document.getElementById('locationT');
+
+    locationT.style.color = '#FFF'
 
     locationT.innerHTML = addressField;
 

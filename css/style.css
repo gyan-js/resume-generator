@@ -176,8 +176,10 @@ input{
     .contact-info ul li i{
         padding-right: 1rem;
         font-size: 1.2rem;
-        color: #2D9CDB;
+        color: #000;
     }
+
+   
     
     .skills-section ul{
         padding-top: 2rem;
@@ -205,7 +207,7 @@ input{
         position: absolute;
         left: 0;
         background-color: #2D9CDB;
-        border-radius: 12px;
+        border-radius: 12px;  
     }
     .js-progress{
         width: 108%;
@@ -329,7 +331,9 @@ input{
    .tp1{
     
         position: absolute;
-       left: 50%;
+       left: 51%;
+       top: 39%;
+       
     }
 
 hr.one{
@@ -359,6 +363,10 @@ button.download{
 
 button.download:hover{
     background:#ffa500;
+    color: #000;
+}
+
+.fa-color{
     color: #000;
 }
 
@@ -411,6 +419,11 @@ button.download:hover{
 }
 
 @media print{
+    .tp1{
+        position: absolute;
+        left: 52%;
+        top: 28%;
+    }
     #cv-template{
        height: 100vw;
        width: 100vh;

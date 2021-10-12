@@ -1,13 +1,15 @@
 html, body{
+
   width: 100%;
   height: 100%;
+
   background: #bcdefa;
-  overflow: hidden;
+ 
 }
 
 /* HERE ARE THE SHAPES FOR THE BACKGROUND*/
 
-.rhombus1{
+.parallelogram1{
   position: absolute;
   top: -5%;
   left: -2%;
@@ -20,7 +22,7 @@ html, body{
   
   
 }
-.rhombus2{
+.parallelogram2{
   position: absolute;
   top: 15%;
   left: -3.5%;
@@ -34,7 +36,7 @@ html, body{
   
 }
 
-.rhombus3{
+.parallelogram3{
   position: absolute;
   top: 8%;
   left:15%;
@@ -48,7 +50,7 @@ html, body{
   
 }
 
-.rhombus4{
+.parallelogram4{
   position: absolute;
   top: 75%;
   left: 75%;
@@ -62,7 +64,7 @@ html, body{
   
 }
 
-.rhombus5{
+.parallelogram5{
   position: absolute;
   top: 45%;
   left: 80%;
@@ -76,9 +78,233 @@ html, body{
   
 }
 
+.main-content{
+height: 90%;
+width: 86%;
+ 
+overflow: hidden;
+   left: 4%;
+   top: 5%;
+  position: relative;
+  background-color: #FFF;
+
+}
+
+.left-seciton{
+  position: absolute;
+  background-color: #FFF;
+  border-radius: 2%;
+ 
+  height: 100%;
+  width: 50%;
+}
+h1{
+
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+i{
+  position: absolute;
+  top: 7%;
+  left: 25%;
+ 
+}
+
+input{
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 15px
+}
+
+input::placeholder{
+  font-size: 16px;
+  color: #000;
+}
+
+.comp{
+  position: absolute;
+  top: 3%;
+  left: 30%;
+}
+
+h3{
+  position: absolute;
+  left: 23%;
+  top: 65%;
+  color: #000;
+  font-weight: 500;
+  font-size: medium;
+}
+
+button{
+  cursor: pointer;
+}
+
+.signUp{
+  position: absolute;
+  left: 23%;
+  top: 30%;
+}
+
+.signUpButton{
+  position: absolute;
+  top: 75%;
+  left: 23%;
+   height: 30px;
+   width: 290px;
+   border-radius: 5px;
+   background-color: #0000ffc4;
+   border: none;
+   color: #FFF;
+}
+
+.loginButton{
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 23%;
+   height: 30px;
+   width: 290px;
+   border-radius: 5px;
+   background-color: #1717dcc4;
+   border: none;
+   color: #FFF;
+}
+
+.showSignIn{
+  position: absolute;
+  top: 83%;
+  left: 44.5%;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+}
+
+.notice{
+ 
+}
+.query{
+  position: absolute;
+  top: 80%;
+  left: 23%;
+}
+
+#user{
+  position: absolute;
+  left: 23%;
+  top: 40%;
+  height: 30px;
+  width: 220px;
+}
+
+
+#email{
+  position: absolute;
+  left: 23%;
+  top: 50%;
+  height: 30px;
+  width: 290px;
+}
+
+#password{
+  position: absolute;
+  left: 23%;
+  top: 60%;
+  height: 30px;
+  width: 290px;
+}
+
+
+.right-section{
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  background-color: rgb(81, 106, 247);
+  
+}
+
+.parallelogram6{
+  position: absolute;
+  top: 10%;
+  left: -8%;
+  height: 160px;
+  width: 120px;
+  transform: skew(-0.5deg, 25deg);
+  border-radius: 5%;
+  background-color: rgb(228, 187, 21);
+}
+
+.parallelogram7{
+      position: absolute;
+  top: 10%;
+  left: 20%;
+  height: 100px;
+  width: 70px;
+  transform: skew(-0.5deg, 23deg);
+  border-radius: 5%;
+  background-color: rgb(240, 206, 71);
+}
+
+.parallelogram8{
+  position: absolute;
+top: -10%;
+left: 82%;
+height: 130px;
+width: 80px;
+transform: skew(0.5deg, 23deg);
+border-radius: 5%;
+background-color: rgba(31, 40, 162, 0.87);
+}
+
+.parallelogram9{
+  position: absolute;
+  top: 50%;
+  left: -8%;
+  height: 160px;
+  width: 120px;
+  transform: skew(-0.5deg, 25deg);
+  border-radius: 5%;
+}
+
+.parallelogram10{
+  position: relative;
+
+  top: 60%;
+  left: -8%;
+  height: 160px;
+  width: 120px;
+  transform: skew(-0.5deg, 20deg);
+  border-radius: 5%;
+  background-color: aqua;
+}
 
 
 
+
+.description1{
+  position: absolute;
+  color: #FFF;
+  top: 30%;
+  left: 20%;
+  font-size: 45px;
+}
+
+.description2{
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  color: #FfF;
+}
+
+
+
+
+
+
+
+/*
 
 .left-content{
   
@@ -132,6 +358,10 @@ h5{
 
 button{
   cursor: pointer;
+}
+
+i{
+  color: aquamarine;
 }
 
 .registerButton{
@@ -198,11 +428,5 @@ button{
 
 .right-content{
   position: absolute;
-  background: rgba(23, 35, 209, 0.726);
-  top: 10%;
-  left: 47.5%;
-  height: 550px;
-  width: 600px;
-  
-}
+  background: rgba(23, 35, 2
 
