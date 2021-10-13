@@ -26,6 +26,7 @@ showSignIn.style.display = 'none'
 query.style.display = 'none';
 query2.style.display = 'block';
 query2.style.textAlign = 'center';
+query2.style.fontWeight = '550'
 }
 
 var backToSignUp = document.getElementById('query2ID');
