@@ -11,6 +11,7 @@ let loginButton = document.getElementById('loginButtonID');
 let registerButton = document.getElementById('signUpButtonID');
 let showSignIn = document.getElementById('showSignInID');
 let query = document.getElementById('queryID');
+let query2 = document.getElementById('query2ID');
 
 ////////////////////////////////////////////////////////////
 user.style.display = 'none';
@@ -23,8 +24,39 @@ loginButton.style.display = 'block';
 loginButton.style.cursor = 'pointer';
 showSignIn.style.display = 'none'
 query.style.display = 'none';
+query2.style.display = 'block';
+query2.style.textAlign = 'center';
 }
 
+var backToSignUp = document.getElementById('query2ID');
+ 
+backToSignUp.onclick = function() {
+  let user = document.getElementById('user');
+let email = document.getElementById('email');
+let password = document.getElementById('password');
+let notice = document.getElementById('noticeID');
+let loginButton = document.getElementById('loginButtonID');
+let registerButton = document.getElementById('signUpButtonID');
+let showSignIn = document.getElementById('showSignInID');
+
+let query = document.getElementById('queryID');
+let query2 = document.getElementById('query2ID');
+/////////////////////////////////////////////////////////////////////////////
+
+user.style.display = 'block';
+user.style.top = '40%'
+email.style.top = '50%';
+password.style.top = '60%'
+password.setAttribute('placeholder', 'Choose your password*');
+notice.style.display = 'block';
+registerButton.style.display = 'block';
+loginButton.style.display = 'none';
+loginButton.style.cursor = 'pointer';
+showSignIn.style.display = 'block'
+query.style.display = 'block';
+query2.style.display = 'none';
+query2.style.textAlign = 'center';
+}
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
