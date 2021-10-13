@@ -57,6 +57,8 @@ showSignIn.style.display = 'block'
 query.style.display = 'block';
 query2.style.display = 'none';
 query2.style.textAlign = 'center';
+
+document.getElementById('signUpID').innerHTML = 'Sign Up';
 }
 
 // Your web app's Firebase configuration
